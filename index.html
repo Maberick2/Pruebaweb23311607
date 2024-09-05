@@ -3,22 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Sencilla</title>
+    <title>Página Avanzada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido a mi página</h1>
+        <nav>
+            <div class="logo">MiSitio</div>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section>
-        <p>Este es un ejemplo de una página HTML con un diseño sencillo.</p>
-        <a href="#">Saber más</a>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Bienvenido a Mi Sitio Web</h1>
+            <p>Descubre lo que tenemos para ofrecer</p>
+            <a href="#" class="btn-primary">Empezar</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Diseño Web</h3>
+                <p>Creación de sitios web personalizados y modernos.</p>
+            </div>
+            <div class="card">
+                <h3>Desarrollo de Software</h3>
+                <p>Soluciones de software a medida para tu negocio.</p>
+            </div>
+            <div class="card">
+                <h3>Consultoría Tecnológica</h3>
+                <p>Asesoría especializada en tecnología y negocios.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contáctanos</h2>
+        <form action="#">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn-primary">Enviar</button>
+        </form>
     </section>
 
     <footer>
-        <p>© 2024 Mi Página Web</p>
+        <p>© 2024 Mi Sitio Web. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
- 
