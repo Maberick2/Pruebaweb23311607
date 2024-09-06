@@ -6,127 +6,180 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #F4F4F4;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
     color: #333333;
     line-height: 1.6;
 }
 
+/* Header con imagen de fondo */
 header {
-    background-image: url('https://via.placeholder.com/1600x600');
+    background-image: url('https://via.placeholder.com/1600x800');
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    text-align: center;
     position: relative;
+    text-align: center;
+    color: white;
 }
 
 header .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
     border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
+header .btn-primary {
+    padding: 10px 30px;
+    background-color: #23d160;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+header .btn-primary:hover {
+    background-color: #20b450;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilo de las secciones */
 main {
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Sección Acerca de */
 .about {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .about h2 {
     font-size: 2.5em;
-    color: #3218E9;
+    color: #3218e9;
+    margin-bottom: 20px;
 }
 
 .about p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #666666;
-    margin-top: 10px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
+/* Sección Galería */
 .gallery {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .gallery h2 {
     font-size: 2.5em;
-    color: #3218E9;
-    margin-bottom: 20px;
+    color: #3218e9;
+    margin-bottom: 40px;
 }
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
 }
 
 .image-container {
     background-color: white;
-    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-container img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    display: block;
 }
 
+.image-container p {
+    padding: 10px;
+    font-size: 1.1em;
+    color: #666666;
+}
+
+.image-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección Servicios */
 .services {
     text-align: center;
 }
 
 .services h2 {
     font-size: 2.5em;
-    color: #3218E9;
-    margin-bottom: 20px;
+    color: #3218e9;
+    margin-bottom: 40px;
 }
 
 .service-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
 }
 
 .card {
     background-color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .card h3 {
-    font-size: 1.5em;
-    color: #996CF4;
+    font-size: 1.8em;
+    color: #996cf4;
+    margin-bottom: 15px;
 }
 
 .card p {
-    font-size: 1em;
+    font-size: 1.1em;
     color: #666666;
 }
 
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
 footer {
-    background-color: #3218E9;
+    background-color: #3218e9;
     color: white;
     text-align: center;
     padding: 20px;
