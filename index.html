@@ -3,66 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Avanzada</title>
+    <title>Página Visual Interactiva</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">MiSitio</div>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="overlay">
+            <h1>Bienvenido a mi Página Visual</h1>
+            <p>Explora imágenes e información en un solo lugar</p>
+        </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Bienvenido a Mi Sitio Web</h1>
-            <p>Descubre lo que tenemos para ofrecer</p>
-            <a href="#" class="btn-primary">Empezar</a>
-        </div>
-    </section>
+    <main>
+        <section class="about">
+            <h2>Acerca de Nosotros</h2>
+            <p>
+                Somos un equipo creativo dedicado a brindar las mejores experiencias visuales. Nuestra misión es conectar a las personas a través de la belleza del diseño gráfico y la fotografía, haciendo que cada proyecto sea único.
+            </p>
+        </section>
 
-    <section class="services">
-        <h2>Nuestros Servicios</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Diseño Web</h3>
-                <p>Creación de sitios web personalizados y modernos.</p>
+        <section class="gallery">
+            <h2>Nuestra Galería</h2>
+            <div class="image-grid">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400" alt="Imagen 1">
+                    <p>Imagen 1: Naturaleza</p>
+                </div>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400" alt="Imagen 2">
+                    <p>Imagen 2: Paisaje Urbano</p>
+                </div>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400" alt="Imagen 3">
+                    <p>Imagen 3: Montañas</p>
+                </div>
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400" alt="Imagen 4">
+                    <p>Imagen 4: Playas</p>
+                </div>
             </div>
-            <div class="card">
-                <h3>Desarrollo de Software</h3>
-                <p>Soluciones de software a medida para tu negocio.</p>
+        </section>
+
+        <section class="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Diseño Gráfico</h3>
+                    <p>
+                        Creamos soluciones visuales personalizadas para tu marca, desde logotipos hasta diseño web.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Fotografía</h3>
+                    <p>
+                        Capturamos los momentos más importantes con alta calidad y estilo único.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Consultoría Creativa</h3>
+                    <p>
+                        Te ayudamos a darle vida a tus ideas con estrategias visuales innovadoras.
+                    </p>
+                </div>
             </div>
-            <div class="card">
-                <h3>Consultoría Tecnológica</h3>
-                <p>Asesoría especializada en tecnología y negocios.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact">
-        <h2>Contáctanos</h2>
-        <form action="#">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Correo Electrónico</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit" class="btn-primary">Enviar</button>
-        </form>
-    </section>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Mi Página Visual. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
