@@ -1,79 +1,40 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Transformaciones en css</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="overlay">
-            <h1>Explora el Mundo Visual</h1>
-            <p>Diseño visual moderno y elegante</p>
-            <a href="#about" class="btn-primary">Descubre más</a>
-        </div>
-    </header>
-
-    <main>
-        <section id="about" class="about">
-            <h2>¿Quiénes Somos?</h2>
-            <p>
-                Somos un grupo de diseñadores y fotógrafos apasionados, dedicados a crear experiencias visuales impactantes. 
-                Nuestro objetivo es capturar la esencia de cada proyecto y transformarla en una obra de arte.
-            </p>
-        </section>
-
-        <section class="gallery">
-            <h2>Nuestra Galería</h2>
-            <div class="image-grid">
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG5hdHVyYWxlemElMjB8ZW58MHx8MHx8fDA%3D" alt="Naturaleza">
-                    <div class="image-description">Naturaleza</div>
-                </div>
-                <div class="image-container">
-                    <img src="https://media.istockphoto.com/id/1524254041/es/foto/vista-a%C3%A9rea-del-paisaje-urbano-de-san-francisco-al-amanecer-de-la-ma%C3%B1ana.webp?a=1&b=1&s=612x612&w=0&k=20&c=0ScvhpkfLMawyQt3nm1_TrK3Njcpt4MP-vaQWq6RrhE=" alt="Paisaje Urbano">
-                    <div class="image-description">Paisaje Urbano</div>
-                </div>
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Montañas">
-                    <div class="image-description">Montañas</div>
-                </div>
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1520520731457-9283dd14aa66?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Playas">
-                    <div class="image-description">Playas</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="services">
-            <h2>Nuestros Servicios</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <h3>Diseño Gráfico</h3>
-                    <p>
-                        Creamos soluciones visuales personalizadas para tu marca, desde logotipos hasta diseño web.
-                    </p>
-                </div>
-                <div class="card">
-                    <h3>Fotografía</h3>
-                    <p>
-                        Capturamos los momentos más importantes con alta calidad y estilo único.
-                    </p>
-                </div>
-                <div class="card">
-                    <h3>Consultoría Creativa</h3>
-                    <p>
-                        Te ayudamos a darle vida a tus ideas con estrategias visuales innovadoras.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Turismo. Todos los derechos reservados.</p>
-    </footer>
+    <!-- transformaciones
+     se utilizan para efectos visuales a los elementos de html
+     se puede rotar, escala, mover, inclinar
+     se puede aplicar con la etiqueta "transform"
+     traslate pertenece al metodo de css, traleste(x,y)
+     mueve un elemento desde su posicion original 
+     para que se muevan hay quu agregar la propiedad de transicion
+     dever ir acompañado con la propiedad de over
+     transition-property
+               -duracion
+               -timing-function
+               -delay
+               -->
+     <h1>transformaciones</h1>
+     <hr>
+     <div class="box translate ">translate</div>
+     <br>
+     <br>
+     <hr>
+     <div class="box rotate">rotate</div>
+     <br><br><br>
+     <hr>
+     <div class="box scale">scale</div>
+     <br><br><br>
+     <hr>
+     <div class="box skew">Skew</div>
+     <br><br><br>
+     <hr>
+     <div class="box matrix">matrix</div>
 </body>
 </html>
