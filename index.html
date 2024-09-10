@@ -1,40 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transformaciones en css</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Página Web Sencilla</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- transformaciones
-     se utilizan para efectos visuales a los elementos de html
-     se puede rotar, escala, mover, inclinar
-     se puede aplicar con la etiqueta "transform"
-     traslate pertenece al metodo de css, traleste(x,y)
-     mueve un elemento desde su posicion original 
-     para que se muevan hay quu agregar la propiedad de transicion
-     dever ir acompañado con la propiedad de over
-     transition-property
-               -duracion
-               -timing-function
-               -delay
-               -->
-     <h1>transformaciones</h1>
-     <hr>
-     <div class="box translate ">translate</div>
-     <br>
-     <br>
-     <hr>
-     <div class="box rotate">rotate</div>
-     <br><br><br>
-     <hr>
-     <div class="box scale">scale</div>
-     <br><br><br>
-     <hr>
-     <div class="box skew">Skew</div>
-     <br><br><br>
-     <hr>
-     <div class="box matrix">matrix</div>
+    <header>
+        <h1>Arcane</h1>
+        <nav>
+            <ul>
+                <li><a href="#Que es">Que es</a></li>
+                <li><a href="#Sinopsis">Sinopsis</a></li>
+                <li><a href="#Premios">Premios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Que es">
+        <h2>Que es arcane</h2>
+        <p>Es una serie de televisión por internet animada franco-estadounidense de aventuras y drama ambientada en el universo de League of Legends.
+            Ambientada en el pasado, vuelve a contar las historias de origen de varios personajes de Piltover y Zaun. Al igual que el juego en el que se basa, Arcane está dirigido a una audiencia de "16+" y tratará temas más adultos como desigualdad , culpa, corrupción, dilemas y más.</p>
+            <br>
+            <div class="imagene">
+                <img src="./Imagenes/OP.jpeg" alt="Arcane" />
+            </div>
+    </section>
+
+    <section id="Sinopsis">
+        <h2> Sinopsis </h2>
+        <p>La historia de Arcane se desarrolla en las ciudades de Piltover y Zaun, ubicadas en el mundo de Runeterra. Piltover es una ciudad próspera, conocida por su academia y avances científicos, mientras que Zaun, su contraparte subterránea, está marcada por la pobreza, la criminalidad y la contaminación química, operando sin ninguna autoridad central. 
+            Las tensiones y rivalidades entre Piltover y Zaun dividen familias y amigos. Vi y Powder, dos hermanas de Zaun, y Jayce y Viktor, dos amigos inventores bajo la tutela del legendario científico Heimerdinger, son algunos de los personajes cuyas relaciones se ven afectadas. 
+            La creación de Hextech en Piltover, una tecnología que permite a cualquiera controlar la energía mágica, exacerba estas tensiones. Mientras tanto, en Zaun, una nueva droga transforma a los humanos en monstruos, intensificando aún más el conflicto entre las dos ciudades.</p>
+            <br>
+            <div class="imagene">
+                <img src="./Imagenes/Arcane.jpg" alt="Arcane" />
+            </div>
+    </section>
+
+    <section id="Premios">
+        <h2>Premios</h2>
+        <p>Ganando los 9 premios a los que fue nominada en los XLX Premios Annie celebrados el 12 de marzo de 2022, así como el premio Emmy a la mejor serie animada, entre otros, 
+            'Arcane' se convirtió en la primera serie de streaming basada en un videojuego, y a su vez, la primera adaptación de un videojuego, en obtener ambos premios a la vez. 
+            Logró posicionarse como la primera serie de streaming en obtener la mayor cantidad de premios de las mismas nominaciones en un mismo año, además de ser la primera serie de Netflix en conseguir un Emmy. 
+            Además, ganó la categoría recién inaugurada ese año en The Game Awards 2022 de Mejor Adaptación.
+            <br>
+            <div class="imagene">
+                <img src="./Imagenes/ma.jpeg" alt="Arcane" />
+            </div>
+        </p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
